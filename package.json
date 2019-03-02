@@ -1,0 +1,34 @@
+{
+  "name": "fastify-http2",
+  "version": "1.0.0",
+  "description": "Node JS server using fastify framework with support for HTTP2 protocol",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdr0/fastify-http2.git"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs",
+    "fastify"
+  ],
+  "author": "Pedro Selas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pdr0/fastify-http2/issues"
+  },
+  "homepage": "https://github.com/pdr0/fastify-http2#readme",
+  "dependencies": {
+    "@babel/polyfill": "7.2.5",
+    "fastify": "2.0.0",
+    "webpack": "4.29.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.2.3",
+    "@babel/core": "7.3.4",
+    "@babel/preset-env": "7.3.4"
+  }
+}
