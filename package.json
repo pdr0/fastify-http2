@@ -2,33 +2,54 @@
   "name": "fastify-http2",
   "version": "1.0.0",
   "description": "Node JS server using fastify framework with support for HTTP2 protocol",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "keywords": [
+    "fastify",
+    "javascript",
+    "nodejs"
+  ],
+  "homepage": "https://github.com/pdr0/fastify-http2#readme",
+  "bugs": {
+    "url": "https://github.com/pdr0/fastify-http2/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pdr0/fastify-http2.git"
   },
-  "keywords": [
-    "javascript",
-    "nodejs",
-    "fastify"
-  ],
-  "author": "Pedro Selas",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pdr0/fastify-http2/issues"
+  "author": "Pedro Selas",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack/webpack.config.prod.js  --colors",
+    "dev": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
   },
-  "homepage": "https://github.com/pdr0/fastify-http2#readme",
   "dependencies": {
-    "@babel/polyfill": "7.2.5",
     "fastify": "2.0.0",
+    "react": "^16.8.3",
     "webpack": "4.29.6"
   },
   "devDependencies": {
     "@babel/cli": "7.2.3",
     "@babel/core": "7.3.4",
-    "@babel/preset-env": "7.3.4"
+    "@babel/preset-env": "7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "babel-polyfill": "^6.26.0",
+    "clean-webpack-plugin": "^1.0.1",
+    "copy-webpack-plugin": "^5.0.0",
+    "eslint": "^5.4.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-jest": "^22.3.0",
+    "eslint-plugin-react": "^7.11.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "node-sass": "^4.9.3",
+    "react-dom": "^16.8.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.1",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.2.1"
   }
 }
